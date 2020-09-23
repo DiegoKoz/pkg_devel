@@ -34,7 +34,7 @@ install.packages(c(
   "devtools", "roxygen2",
   "testthat", "covr", "pkgdown"
 ))
-usethis::use_course("http://bit.ly/30kL8QD") ### CAMBIAR
+usethis::use_course("http://bit.ly/pkg_dev") ### CAMBIAR
 ```
 
 # Basic Workflow
@@ -116,7 +116,7 @@ This indicates that:
  - We did not specify the package license
  - We did not create the documentation for the function `fbind`
  
-To create the license we can use `usethis::use_mit_license()` function
+To create the license we can use `usethis::use_mit_license(name = 'Your Name')` function
 
  
 ### Documentation
@@ -210,7 +210,10 @@ git push --set-upstream origin master
 
 The first function defines our folder as a git repo. The second creates a GitHub repository. Finally the third one defines the upstream of our repo and pushes the content it has.
 
-For this to work we have to have previously synchronized our computer with a GitHub session.
+For this to work we have to have previously synchronized our computer with a GitHub session. We can do this from are with `usethis::browse_github_token()` to generate a authorization from GitHub and then add it to R with `usethis::edit_r_environ()`
+
+
+
 
 For example, for me, these commands created the following repo: [https://github.com/DiegoKoz/tstpckg](https://github.com/DiegoKoz/tstpckg) ###CAMBIAR
 
