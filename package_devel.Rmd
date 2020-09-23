@@ -3,6 +3,13 @@ title: "Package development in R"
 output:
   html_document:
     df_print: paged
+    
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+
 ---
 
 The goal of this talk is to introduce the use of tools that simplify the development of packages in R. It's a free 
