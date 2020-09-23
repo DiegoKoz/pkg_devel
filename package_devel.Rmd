@@ -24,7 +24,7 @@ The goal of this talk is to introduce the use of tools that simplify the develop
 
 We are going to make a toy package, following [this chapter](https://r-pkgs.org/whole-game.html)
 
-## Setup
+# Setup
 
 > All code in these class notes should not be run in the .rmd but in the package environment
 
@@ -45,7 +45,7 @@ The main tool for creating an R-package is `usethis`, a package that contains a 
 ![](img/logousethis.png)
 
 
-### We created the package with `create_package()`
+### We create the package with `create_package()`
 
 This creates the directory with the basic structure of the package
 
@@ -90,7 +90,7 @@ usethis::use_r("fbind")
 
 > We have our function that does what we want. What now?
 
-## We check the package
+### We check the package
 
 
 `Check` analyses the package to find possible `errors`, `warnings` or `notes`. These are three levels of severity of the problems presented by the package.
@@ -118,7 +118,7 @@ This indicates that:
 To create the license we can use `usethis::use_mit_license(name = 'Your Name')` function
 
  
-### Documentation
+## Documentation
 
 To create the documentation we use the `devtools::document()` function or ctrl+shift+D and the  [roxygen2](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html) package
  
@@ -166,7 +166,7 @@ This indicates that the test is working properly.
 
 > Now every time we do a check, it will also run all the tests. 
 
-## Workflow:
+## Workflow for package development:
 
 ![](img/workflow.png)
 
@@ -184,8 +184,6 @@ To this end, we will look at three ways of sharing our work
 2. Vignettes
 3. pkgdown
 4. submit to CRAN
-
-
 
 ## Github package
 
@@ -209,8 +207,6 @@ git push --set-upstream origin master
 The first function defines our folder as a git repo. The second creates a GitHub repository. Finally the third one defines the upstream of our repo and pushes the content it has.
 
 For this to work we have to have previously synchronized our computer with a GitHub session. We can do this from are with `usethis::browse_github_token()` to generate a authorization from GitHub and then add it to R with `usethis::edit_r_environ()`
-
-
 
 
 For example, for me, these commands created the following repo: [https://github.com/DiegoKoz/tstpckg](https://github.com/DiegoKoz/tstpckg)
@@ -272,7 +268,7 @@ This creates a docs/ folder in the repo, with all the materials of the page.  Wh
 For me, this generates the [https://diegokoz.github.io/tstpckg/](https://diegokoz.github.io/tstpckg/) webpage
 
 
-## Submit a CRAN
+## Submit to CRAN
 
 ![](img/macaulay_culkin.jpg){width=500}
 
