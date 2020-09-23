@@ -3,9 +3,8 @@ title: "Package development in R"
 output:
   html_document:
     toc: true
-    toc_depth: 2
-  df_print: paged
-    
+    toc_float: true
+
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
