@@ -12,9 +12,7 @@ knit: (function(input_file, encoding) {
 
 ---
 
-The goal of this talk is to introduce the use of tools that simplify the development of packages in R. It's a free 
-
-El objetivo de este workshop es introducir el uso de herramientas que simplifican la creación de paquetes en R. It is a free and summarized interpretation of the course prepared by:
+The goal of this talk is to introduce the use of tools that simplify the development of packages in R. It's a free and summarized interpretation of the course prepared by:
 
   * Jenny Bryan [jennybryan.org](https://jennybryan.org) \| GitHub [jennybc](https://github.com/jennybc) \| Twitter [jennybryan](https://twitter.com/jennybryan)
   * Jim Hester [jimhester.com](https://www.jimhester.com) \| GitHub [jimhester](https://github.com/jimhester) \| Twitter [jimhester_](https://twitter.com/jimhester_)
@@ -34,7 +32,7 @@ install.packages(c(
   "devtools", "roxygen2",
   "testthat", "covr", "pkgdown"
 ))
-usethis::use_course("http://bit.ly/pkg_dev") ### CAMBIAR
+usethis::use_course("http://bit.ly/pkg_dev")
 ```
 
 # Basic Workflow
@@ -96,7 +94,7 @@ usethis::use_r("fbind")
 
 `Check` analyses the package to find possible `errors`, `warnings` or `notes`. These are three levels of severity of the problems presented by the package.
 
-- For a package to be accepted in CRAN it must have neither errors nor warnings, and the notes are inspected by the evaluators (in general there is a note for packages that are uploaded for the first time, and there should be no others than this one).
+- For a package to be accepted in CRAN it must have neither errors nor warnings, and the notes are inspected by the reviewers (in general there is a note for packages that are uploaded for the first time, and there should be no others than this one).
 
 - It is important to run many checks throughout the development of the package and keep it clean. It is better to solve the problems as soon as they appear.
 
@@ -131,7 +129,6 @@ To create the documentation we use the `devtools::document()` function or ctrl+s
 Once the package works, we can use `devtools::install()` to install and use it
 
 # Testing
-(skip)
 
 ![](img/testthat.png)
 
@@ -174,7 +171,7 @@ This indicates that the test is working properly.
 
 ## Coverage
 
-The test coverage indicate the proportion of the code that is covered bt tests. Not all code is easily testable, but a high coverage is a guarantee that there are no hidden problems. (in the original notes there is a detail explanation on how to check coverage)
+The test coverage indicate the proportion of the code that is covered by tests. Not all code is easily testable, but a high coverage is a guarantee that there are no hidden problems. (in the original notes there is a detail explanation on how to check coverage)
 
 # Sharing the package
 
@@ -215,7 +212,7 @@ For this to work we have to have previously synchronized our computer with a Git
 
 
 
-For example, for me, these commands created the following repo: [https://github.com/DiegoKoz/tstpckg](https://github.com/DiegoKoz/tstpckg) ###CAMBIAR
+For example, for me, these commands created the following repo: [https://github.com/DiegoKoz/tstpckg](https://github.com/DiegoKoz/tstpckg)
 
 ### Workflow on GitHub
 
