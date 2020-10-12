@@ -305,4 +305,6 @@ This is a resubmission. Compared to the last submission, we have:
 ---
 ```
 
+For more details and advises for CRAN submission, checkout this repo from ThinkR: [https://github.com/ThinkR-open/prepare-for-cran](https://github.com/ThinkR-open/prepare-for-cran)
+
 
