@@ -113,8 +113,7 @@ What does it return?
 This indicates that:
  
  - We did not specify the package license
- - We did not create the documentation for the function `fbind`
- 
+
 To create the license we can use `usethis::use_mit_license(name = 'Your Name')` function
 
  
